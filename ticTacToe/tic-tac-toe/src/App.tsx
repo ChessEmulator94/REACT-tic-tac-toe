@@ -1,22 +1,12 @@
 import { useState } from "react";
 import SquareButton from "./components/SquareButton";
+import GameBoard from "./components/GameBoard";
+import React from "react";
 import "./App.css";
 import "./index.css";
 
 function App() {
-  return (
-    <div className="grid-container">
-      <SquareButton />
-      <SquareButton />
-      <SquareButton />
-      <SquareButton />
-      <SquareButton />
-      <SquareButton />
-      <SquareButton />
-      <SquareButton />
-      <SquareButton />
-    </div>
-  );
+  return <GameBoard />;
 }
 
 export default App;
