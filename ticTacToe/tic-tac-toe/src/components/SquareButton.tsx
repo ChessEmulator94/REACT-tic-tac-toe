@@ -1,9 +1,17 @@
 import { useState } from "react";
 
 function SquareButton() {
+  const [value, updateValue] = useState("");
+  const [isXNext, setIsNext] = useState(false);
+
   return (
     <div>
-      <button className="testButton"></button>
+      <button
+        className="testButton"
+        onClick={() => updateValue(isXNext ? "X" : "O")}
+      >
+        {value}
+      </button>
     </div>
   );
 }
